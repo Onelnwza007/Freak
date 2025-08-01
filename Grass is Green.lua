@@ -7,7 +7,7 @@ if gg.getTargetPackage() ~= target_process then
     os.exit()
 end
 local v = gg.getTargetInfo()
-local RealVersion= 596
+local RealVersion= 605
 if v.versionCode ~= RealVersion then
     print('❗️Game Update !\nDm owner for Update Script\ndiscord.gg/hMJTPB2eWD❗️')
     gg.copyText("discord.gg/hMJTPB2eWD")

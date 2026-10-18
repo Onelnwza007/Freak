@@ -2865,6 +2865,7 @@ end
 
 
 
+
 local info = gg.PACKAGE
 if info ~= "com.snow.gg"
 then
@@ -2893,10 +2894,10 @@ Mul2 ..' ➮ Damage Multiplier',--2
 Mul3 ..' ➮ Disable Enemy',--3
 Mul4 ..' ➮ Infinite Mana',--4
 Mul5 ..' ➮ [Risky] Infinite Skills',--5
---Mul6 ..' ➮ [Risky] No Time Dungeon',--6
+Mul6 ..' ➮ [Risky] No Time Dungeon',--6
 Mul7 ..' ➮ [Risky] Player Speed x2',--7
 ' ➮ EXIT'--8
-}, nil, "Solo Leveling:Arise [x64]\nSnow Hub\nDiscord: discord.gg/hMJTPB2eWD")
+}, nil, "Solo Leveling:Arise [x64]\nSnowy\nDiscord: discord.gg/hMJTPB2eWD")
 if t == nil then gg.sleep(1)
 else
 if t[1] then FF1() end
@@ -2951,32 +2952,23 @@ gg.toast("   ✅️ Bypass Deactivated ✅️")
 end
 end
 Mul2 = "〘 🔵 〙"
+function setvalue(address,flags,value) local Sql = {} Sql[1] = {} Sql[1].address = address Sql[1].flags = flags Sql[1].value = value gg.setValues(Sql) end
+_SprDamage = 0x6B96BAC -- Damage Low: return 1.0f (fmov s0,#1.0 ; ret)
 function FF2()
+so = gg.getRangesList("libil2cpp.so")[2].start
 if Mul2 == "〘 🔵 〙" then
 gg.setVisible(false)
+setvalue(so + _SprDamage, 4, 506204160)
+setvalue(so + _SprDamage + 4, 4, -698416192)
 gg.clearResults()
-gg.clearList()
-gg.setRanges(16384)
-gg.searchNumber("h 00 84 4D 2D 02 18 21 1E",1)
-gg.getResults(999)
-gg.editAll("h00102E1EC0035FD6",1)
-gg.clearResults()
-gg.clearList()
 Mul2 = "〘 🔴 〙"
 gg.sleep(100)
 gg.toast("   ✅️Damage Multiplier Activated✅️")
 elseif Mul2 == "〘 🔴 〙" then
 gg.setVisible(false)
+setvalue(so + _SprDamage, 4, 760054784)
+setvalue(so + _SprDamage + 4, 4, 505485314)
 gg.clearResults()
-gg.clearList()
-gg.setRanges(16384)
-gg.searchNumber("h 00102E1EC0035FD6 28 20 20 1E",1)
-gg.getResults(999)
-gg.refineNumber("h 00902E1EC0035FD6",1)
-gg.getResults(999)
-gg.editAll("h 00 84 4D 2D 02 18 21 1E",1)
-gg.clearResults()
-gg.clearList()
 Mul2 = "〘 🔵 〙"
 gg.sleep(100)
 gg.toast("   ✅️ Damage Multiplier Deactivated ✅️")
@@ -3022,7 +3014,7 @@ end
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber("�-132,182,018;-113,243,128;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
+gg.searchNumber(" -132,182,018;-113,243,128;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("-132,182,018;-113,243,128", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3037,7 +3029,7 @@ elseif Mul4 == "〘 🔴 〙" then
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber("��1,384,408,320;-698,416,192;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
+gg.searchNumber("  1,384,408,320;-698,416,192;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("1,384,408,320;-698,416,192", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3051,75 +3043,66 @@ gg.toast("   ✅️l Infinite Mana Deactivated ✅️")
 end
  end
  Mul5 = "〘 🔵 〙"
+_SprSkill = 0x62024D4 -- Infinity Skill: ret
 function FF5()
+so = gg.getRangesList("libil2cpp.so")[2].start
 if Mul5 == "〘 🔵 〙" then
 gg.setVisible(false)
-  gg.setRanges(gg.REGION_CODE_APP)
+setvalue(so + _SprSkill, 4, -698416192)
 gg.clearResults()
-gg.clearList()
-gg.setRanges(16384)
-gg.searchNumber("-1,762,876,233;-65,204,248;-1,459,530,763:9", 4)
-gg.getResults(999)
-gg.refineNumber("-65,204,248;-1,459,530,763", 4)
-gg.getResults(999)
-gg.editAll("506,204,160;-698,416,192", 4)
-gg.clearResults()
-gg.clearList()
 Mul5 = "〘 🔴 〙"
 gg.sleep(100)
 gg.toast("   ✅️Infinite Skills Activated✅️")
 elseif Mul5 == "〘 🔴 〙" then
 gg.setVisible(false)
-  gg.setRanges(gg.REGION_CODE_APP)
+setvalue(so + _SprSkill, 4, -65204248)
 gg.clearResults()
-gg.clearList()
-gg.setRanges(16384)
-gg.searchNumber("-1,762,876,233;506,204,160;-698,416,192::9", 4)
-gg.getResults(999)
-gg.refineNumber("506,204,160;-698,416,192", 4)
-gg.getResults(999)
-gg.editAll("-65,204,248;-1,459,530,763", 4)
-gg.clearResults()
-gg.clearList()
 Mul5 = "〘 🔵 〙"
 gg.sleep(100)
 gg.toast("   ✅️ Infinite Skills Deactivated ✅️")
 end
 end
 Mul6 = "〘 🔵 〙"
+_SprTime = 0x67F1E10 -- No Time Dungeon: ret
+function FF6()
+so = gg.getRangesList("libil2cpp.so")[2].start
+if Mul6 == "〘 🔵 〙" then
+gg.setVisible(false)
+setvalue(so + _SprTime, 4, -698416192)
+gg.clearResults()
+Mul6 = "〘 🔴 〙"
+gg.sleep(100)
+gg.toast("   ✅️No Time Dungeon Activated✅️")
+elseif Mul6 == "〘 🔴 〙" then
+gg.setVisible(false)
+setvalue(so + _SprTime, 4, 301989928)
+gg.clearResults()
+Mul6 = "〘 🔵 〙"
+gg.sleep(100)
+gg.toast("   ✅️ No Time Dungeon Deactivated ✅️")
+end
+end
 
 Mul7 = "〘 🔵 〙"
+_SprSpeed = 0x7195E48 -- Player Speed 12.5: fmov s0,#12.5 ; ret
 function FF7()
+so = gg.getRangesList("libil2cpp.so")[2].start
 if Mul7 == "〘 🔵 〙" then
 gg.setVisible(false)
-gg.setRanges(gg.REGION_CODE_APP)
-gg.clearResults()
-gg.searchNumber("��956,502,632;-132,182,018;-113,230,840;-1,275,067,960:25", gg.TYPE_DWORD)
-gg.setVisible(false)
-gg.refineNumber("-132,182,018;-113,230,840", gg.TYPE_DWORD)
-gg.setVisible(false)
-gg.getResults(8)
-gg.editAll("505,753,600;-698,416,192", gg.TYPE_DWORD)
-gg.setVisible(false)
+setvalue(so + _SprSpeed, 4, 505753600)
+setvalue(so + _SprSpeed + 4, 4, -698416192)
 gg.clearResults()
 Mul7 = "〘 🔴 〙"
 gg.sleep(100)
 gg.toast("   ✅️Player Speed x2 Activated✅️")
 elseif Mul7 == "〘 🔴 〙" then
 gg.setVisible(false)
-gg.setRanges(gg.REGION_CODE_APP)
-gg.clearResults()
-gg.searchNumber("�956,502,632;505,753,600;-698,416,192;-1,275,067,960:25", gg.TYPE_DWORD)
-gg.setVisible(false)
-gg.refineNumber("505,753,600;-698,416,192", gg.TYPE_DWORD)
-gg.setVisible(false)
-gg.getResults(8)
-gg.editAll("-132,182,018;-113,230,840", gg.TYPE_DWORD)
-gg.setVisible(false)
+setvalue(so + _SprSpeed, 4, -132182018)
+setvalue(so + _SprSpeed + 4, 4, -113230840)
 gg.clearResults()
 Mul7 = "〘 🔵 〙"
 gg.sleep(100)
-gg.toast("   ✅️Player Speed x2 Deactivated� ✅️")
+gg.toast("   ✅️ Player Speed x2 Deactivated ✅️")
 end
 end
 function Exit()

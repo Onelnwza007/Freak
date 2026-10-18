@@ -2958,7 +2958,7 @@ Mul2 = "〘 🔵 〙"
 function setvalue(address,flags,value) local Sql = {} Sql[1] = {} Sql[1].address = address Sql[1].flags = flags Sql[1].value = value gg.setValues(Sql) end
 _SprDamage = 0x6B96BAC -- Damage Low: return 1.0f (fmov s0,#1.0 ; ret)
 function FF2()
-so = gg.getRangesList("libil2cpp.so")[2].start
+so = gg.getRangesList("libil2cpp.so")[1].start
 if Mul2 == "〘 🔵 〙" then
 gg.setVisible(false)
 setvalue(so + _SprDamage, 4, 506204160)
@@ -3048,7 +3048,7 @@ end
  Mul5 = "〘 🔵 〙"
 _SprSkill = 0x62024D4 -- Infinity Skill: ret
 function FF5()
-so = gg.getRangesList("libil2cpp.so")[2].start
+so = gg.getRangesList("libil2cpp.so")[1].start
 if Mul5 == "〘 🔵 〙" then
 gg.setVisible(false)
 setvalue(so + _SprSkill, 4, -698416192)
@@ -3089,7 +3089,7 @@ end
 Mul7 = "〘 🔵 〙"
 _SprSpeed = 0x7195E48 -- Player Speed 12.5: fmov s0,#12.5 ; ret
 function FF7()
-so = gg.getRangesList("libil2cpp.so")[2].start
+so = gg.getRangesList("libil2cpp.so")[1].start
 if Mul7 == "〘 🔵 〙" then
 gg.setVisible(false)
 setvalue(so + _SprSpeed, 4, 505753600)
@@ -3111,7 +3111,7 @@ end
 Mul8 = "〘 🔵 〙"
 _SprGameSpeed = 0x2391D90 -- Speed Game: return 0.6f
 function FF8()
-so = gg.getRangesList("libil2cpp.so")[2].start
+so = gg.getRangesList("libil2cpp.so")[1].start
 if Mul8 == "〘 🔵 〙" then
 gg.setVisible(false)
 setvalue(so + _SprGameSpeed, 4, 505417728)

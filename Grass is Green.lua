@@ -3114,20 +3114,12 @@ function FF8()
 so = gg.getRangesList("libil2cpp.so")[1].start
 if Mul8 == "〘 🔵 〙" then
 gg.setVisible(false)
-setvalue(so + _SprGameSpeed, 4, 505417728)
-setvalue(so + _SprGameSpeed + 4, 4, 1923605280)
-gg.clearResults()
-Mul8 = "〘 🔴 〙"
-gg.sleep(100)
-gg.toast("   ✅️Speed Game Activated✅️")
+
+gg.toast("   ✅️ Activated✅️")
 elseif Mul8 == "〘 🔴 〙" then
 gg.setVisible(false)
-setvalue(so + _SprGameSpeed, 4, -132247564)
-setvalue(so + _SprGameSpeed + 4, 4, -1459520525)
-gg.clearResults()
-Mul8 = "〘 🔵 〙"
-gg.sleep(100)
-gg.toast("   ✅️ Speed Game Deactivated ✅️")
+
+gg.toast("   ✅️ ✅️")
 end
 end
 function Exit()

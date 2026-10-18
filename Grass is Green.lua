@@ -3068,7 +3068,7 @@ end
 Mul6 = "〘 🔵 〙"
 _SprTime = 0x67F1E10 -- No Time Dungeon: ret
 function FF6()
-so = gg.getRangesList("libil2cpp.so")[2].start
+so = gg.getRangesList("libil2cpp.so")[1].start
 if Mul6 == "〘 🔵 〙" then
 gg.setVisible(false)
 setvalue(so + _SprTime, 4, -698416192)

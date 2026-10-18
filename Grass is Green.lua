@@ -2899,7 +2899,7 @@ Mul6 ..' ➮ [Risky] No Time Dungeon',--6
 Mul7 ..' ➮ [Risky] Player Speed x2',--7
 Mul8 ..' ➮ Speed Game (2.0)',--8
 ' ➮ EXIT'--9
-}, nil, "Solo Leveling:Arise [x64]\nBry : Snow\nDiscord: discord.gg/hMJTPB2eWD")
+}, nil, "Solo Leveling:Arise [x64]\nBy : Snow\nDiscord: discord.gg/hMJTPB2eWD")
 if t == nil then gg.sleep(1)
 else
 if t[1] then FF1() end

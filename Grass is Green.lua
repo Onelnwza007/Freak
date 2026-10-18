@@ -2897,7 +2897,7 @@ Mul4 ..' ➮ Infinite Mana',--4
 Mul5 ..' ➮ [Risky] Infinite Skills',--5
 Mul6 ..' ➮ [Risky] No Time Dungeon',--6
 Mul7 ..' ➮ [Risky] Player Speed x2',--7
-Mul8 ..' ➮ Speed Game (0.6)',--8
+Mul8 ..' ➮ Speed Game (2.0)',--8
 ' ➮ EXIT'--9
 }, nil, "Solo Leveling:Arise [x64]\nBy : Snow\nDiscord: discord.gg/hMJTPB2eWD")
 if t == nil then gg.sleep(1)
@@ -3017,7 +3017,7 @@ end
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber(" -132,182,018;-113,243,128;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
+gg.searchNumber("�-132,182,018;-113,243,128;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("-132,182,018;-113,243,128", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3032,7 +3032,7 @@ elseif Mul4 == "〘 🔴 〙" then
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber("  1,384,408,320;-698,416,192;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
+gg.searchNumber("��1,384,408,320;-698,416,192;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("1,384,408,320;-698,416,192", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3114,10 +3114,8 @@ function FF8()
 so = gg.getRangesList("libil2cpp.so")[2].start
 if Mul8 == "〘 🔵 〙" then
 gg.setVisible(false)
-setvalue(so + _SprGameSpeed, 4, 311217312)
+setvalue(so + _SprGameSpeed, 4, 505417728)
 setvalue(so + _SprGameSpeed + 4, 4, 1923605280)
-setvalue(so + _SprGameSpeed + 8, 4, 505872384)
-setvalue(so + _SprGameSpeed + 12, 4, -698416192)
 gg.clearResults()
 Mul8 = "〘 🔴 〙"
 gg.sleep(100)
@@ -3126,8 +3124,6 @@ elseif Mul8 == "〘 🔴 〙" then
 gg.setVisible(false)
 setvalue(so + _SprGameSpeed, 4, -132247564)
 setvalue(so + _SprGameSpeed + 4, 4, -1459520525)
-setvalue(so + _SprGameSpeed + 8, 4, -805053644)
-setvalue(so + _SprGameSpeed + 12, 4, -1878808909)
 gg.clearResults()
 Mul8 = "〘 🔵 〙"
 gg.sleep(100)

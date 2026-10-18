@@ -2866,6 +2866,7 @@ end
 
 
 
+
 local info = gg.PACKAGE
 if info ~= "com.snow.gg"
 then
@@ -2896,8 +2897,9 @@ Mul4 ..' ➮ Infinite Mana',--4
 Mul5 ..' ➮ [Risky] Infinite Skills',--5
 Mul6 ..' ➮ [Risky] No Time Dungeon',--6
 Mul7 ..' ➮ [Risky] Player Speed x2',--7
-' ➮ EXIT'--8
-}, nil, "Solo Leveling:Arise [x64]\nSnowy\nDiscord: discord.gg/hMJTPB2eWD")
+Mul8 ..' ➮ Speed Game (0.6)',--8
+' ➮ EXIT'--9
+}, nil, "Solo Leveling:Arise [x64]\nBy : Snow\nDiscord: discord.gg/hMJTPB2eWD")
 if t == nil then gg.sleep(1)
 else
 if t[1] then FF1() end
@@ -2907,7 +2909,8 @@ if t[4] then FF4() end
 if t[5] then FF5() end
 if t[6] then FF6() end
 if t[7] then FF7() end
-if t[8] then Exit() end
+if t[8] then FF8() end
+if t[9] then Exit() end
  
 end
 XGCK=-1
@@ -3103,6 +3106,32 @@ gg.clearResults()
 Mul7 = "〘 🔵 〙"
 gg.sleep(100)
 gg.toast("   ✅️ Player Speed x2 Deactivated ✅️")
+end
+end
+Mul8 = "〘 🔵 〙"
+_SprGameSpeed = 0x2391D90 -- Speed Game: return 0.6f
+function FF8()
+so = gg.getRangesList("libil2cpp.so")[2].start
+if Mul8 == "〘 🔵 〙" then
+gg.setVisible(false)
+setvalue(so + _SprGameSpeed, 4, 311217312)
+setvalue(so + _SprGameSpeed + 4, 4, 1923605280)
+setvalue(so + _SprGameSpeed + 8, 4, 505872384)
+setvalue(so + _SprGameSpeed + 12, 4, -698416192)
+gg.clearResults()
+Mul8 = "〘 🔴 〙"
+gg.sleep(100)
+gg.toast("   ✅️Speed Game Activated✅️")
+elseif Mul8 == "〘 🔴 〙" then
+gg.setVisible(false)
+setvalue(so + _SprGameSpeed, 4, -132247564)
+setvalue(so + _SprGameSpeed + 4, 4, -1459520525)
+setvalue(so + _SprGameSpeed + 8, 4, -805053644)
+setvalue(so + _SprGameSpeed + 12, 4, -1878808909)
+gg.clearResults()
+Mul8 = "〘 🔵 〙"
+gg.sleep(100)
+gg.toast("   ✅️ Speed Game Deactivated ✅️")
 end
 end
 function Exit()

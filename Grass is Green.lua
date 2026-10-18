@@ -3054,6 +3054,7 @@ end
 function FF5()
 if Mul5 == "〘 🔵 〙" then
 gg.setVisible(false)
+  gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
 gg.clearList()
 gg.setRanges(16384)
@@ -3069,6 +3070,7 @@ gg.sleep(100)
 gg.toast("   ✅️Infinite Skills Activated✅️")
 elseif Mul5 == "〘 🔴 〙" then
 gg.setVisible(false)
+  gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
 gg.clearList()
 gg.setRanges(16384)

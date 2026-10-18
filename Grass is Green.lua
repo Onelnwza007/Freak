@@ -2896,7 +2896,7 @@ Mul5 ..' ➮ [Risky] Infinite Skills',--5
 --Mul6 ..' ➮ [Risky] No Time Dungeon',--6
 Mul7 ..' ➮ [Risky] Player Speed x2',--7
 ' ➮ EXIT'--8
-}, nil, "Solo Leveling:Arise [x64]\nBy : Snow\nDiscord: discord.gg/hMJTPB2eWD")
+}, nil, "Solo Leveling:Arise [x64]\nSnow Hub\nDiscord: discord.gg/hMJTPB2eWD")
 if t == nil then gg.sleep(1)
 else
 if t[1] then FF1() end
@@ -3022,7 +3022,7 @@ end
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber(" -132,182,018;-113,243,128;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
+gg.searchNumber("�-132,182,018;-113,243,128;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("-132,182,018;-113,243,128", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3037,7 +3037,7 @@ elseif Mul4 == "〘 🔴 〙" then
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber("  1,384,408,320;-698,416,192;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
+gg.searchNumber("��1,384,408,320;-698,416,192;960,685,056;-113,238,016;960,659,456:53", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("1,384,408,320;-698,416,192", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3092,7 +3092,7 @@ if Mul7 == "〘 🔵 〙" then
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber("  956,502,632;-132,182,018;-113,230,840;-1,275,067,960:25", gg.TYPE_DWORD)
+gg.searchNumber("��956,502,632;-132,182,018;-113,230,840;-1,275,067,960:25", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("-132,182,018;-113,230,840", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3107,7 +3107,7 @@ elseif Mul7 == "〘 🔴 〙" then
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.clearResults()
-gg.searchNumber(" 956,502,632;505,753,600;-698,416,192;-1,275,067,960:25", gg.TYPE_DWORD)
+gg.searchNumber("�956,502,632;505,753,600;-698,416,192;-1,275,067,960:25", gg.TYPE_DWORD)
 gg.setVisible(false)
 gg.refineNumber("505,753,600;-698,416,192", gg.TYPE_DWORD)
 gg.setVisible(false)
@@ -3117,7 +3117,7 @@ gg.setVisible(false)
 gg.clearResults()
 Mul7 = "〘 🔵 〙"
 gg.sleep(100)
-gg.toast("   ✅️Player Speed x2 Deactivated  ✅️")
+gg.toast("   ✅️Player Speed x2 Deactivated� ✅️")
 end
 end
 function Exit()

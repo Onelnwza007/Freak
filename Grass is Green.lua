@@ -2897,7 +2897,7 @@ Mul4 ..' ➮ Infinite Mana',--4
 Mul5 ..' ➮ [Risky] Infinite Skills',--5
 Mul6 ..' ➮ [Risky] No Time Dungeon',--6
 Mul7 ..' ➮ [Risky] Player Speed x2',--7
-Mul8 ..' ➮ Speed Game (2.0)',--8
+Mul8 ..' ➮ an',--8
 ' ➮ EXIT'--9
 }, nil, "Solo Leveling:Arise [x64]\nBy : Snow\nDiscord: discord.gg/hMJTPB2eWD")
 if t == nil then gg.sleep(1)
